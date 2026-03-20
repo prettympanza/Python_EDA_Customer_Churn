@@ -1,84 +1,88 @@
-Telecom Customer Churn – Exploratory Data Analysis
+Telecom Customer Churn – Analysis and Predictive Modelling
 
 Project Overview
 
-This project presents an exploratory data analysis (EDA) of a telecom customer dataset to understand patterns and factors associated with customer churn. The analysis focuses on customer demographics, service usage, contract types, and billing behaviour to uncover insights that may support customer retention strategies.
+This project presents both exploratory data analysis (EDA) and machine learning modelling on a telecom customer dataset to understand and predict customer churn. The analysis identifies key factors influencing churn, while the predictive model helps detect customers at risk of leaving.
 
 Objective
 
-The objective of this project is to explore and analyse customer churn behaviour by:
+The objective of this project is to:
 
-•	Examining customer demographics and service subscriptions
+• Explore customer demographics, service usage, and billing behaviour
 
-•	Identifying patterns in tenure, pricing, and contract types
+• Identify patterns associated with customer churn
 
-•	Comparing churned and non-churned customers using visual and statistical analysis
+• Build a machine learning model to predict churn
 
-•	Highlighting factors that may be associated with higher churn risk
+• Evaluate model performance using appropriate metrics
+
+• Provide actionable insights to support customer retention strategies
 
 Dataset
 
-•	Number of observations: 7,043 customers
+• Number of observations: 7,043 customers
 
-•	Target variable: Churn (Yes / No)
+• Target variable: Churn (Yes / No)
 
 Key feature groups include:
 
-•	Demographics: gender, senior citizen status, dependents
+• Demographics: gender, senior citizen status, partner, dependents
 
-•	Services: internet service, streaming services, security, technical support
+• Services: internet service, streaming services, online security, technical support
 
-•	Contracts and billing: contract type, payment method, monthly charges, tenure
+• Contracts and billing: contract type, payment method, tenure, monthly and total charges
 
 Tools and Libraries
 
-The analysis was conducted using the following tools and libraries:
-
-Python · pandas · numpy · matplotlib · seaborn
+Python · pandas · numpy · matplotlib · seaborn · scikit-learn
 
 Analysis Workflow
 
 Data Loading and Inspection
 
-The dataset was loaded and inspected to understand its structure, including shape, column names, and data types. Sample records were reviewed to gain familiarity with the data.
+The dataset was loaded and examined to understand its structure, variables, and data types.
 
-1.	Data Quality Checks
-   
-Duplicate records were checked and none were found. Missing values were assessed across all variables, and the dataset was confirmed to be complete.
+Data Quality Checks
 
-2.	Target Variable Analysis
-   
-The distribution of the churn variable was examined to assess class balance between churned and non-churned customers.
+No duplicate records or missing values were found. The dataset was clean and suitable for analysis.
 
-3.	Feature Categorisation
-   
-Variables were categorised into numerical and categorical features to support structured analysis.
+Exploratory Data Analysis
 
-4.	Univariate Analysis
+Univariate and bivariate analysis were conducted to understand distributions and relationships between variables. Visualisations were used to identify churn patterns.
 
-Distributions of key numerical variables such as tenure and monthly charges were analysed. Frequency distributions of categorical variables were also examined.
+Feature Engineering and Preprocessing
 
-5.	Bivariate Analysis
-   
-Churn behaviour was compared across contract types and internet service categories. Differences in tenure and monthly charges between churned and non-churned customers were analysed using boxplots.
+Categorical variables were encoded, and numerical features were prepared for modelling.
 
-6.	Correlation Analysis
-   
-Relationships between numerical variables were assessed to identify potential associations and multicollinearity.
+Model Development
+
+A Random Forest classifier was used to predict customer churn. The dataset was split into training and testing sets using stratified sampling.
+
+Model Evaluation
+
+The model was evaluated using accuracy, precision, recall, F1-score, and ROC-AUC. Threshold tuning was applied to improve churn detection.
 
 Key Insights
 
-•	Customer churn is more prevalent among customers with shorter tenure, indicating higher attrition early in the customer lifecycle.
+• Customers with shorter tenure are more likely to churn
 
-•	Month-to-month contracts exhibit significantly higher churn compared to one-year and two-year contracts.
+• Month-to-month contracts show significantly higher churn
 
-•	Customers with higher monthly charges are more frequently represented among churned customers.
+• Higher monthly charges are associated with increased churn risk
 
-•	Fiber optic internet users show higher churn counts compared to DSL users.
+• Fiber optic users exhibit higher churn compared to other services
 
-•	Longer contract commitments and lower pricing exposure are associated with improved customer retention.
+• Customer engagement and service features influence retention
+
+Model Performance
+
+• Accuracy: ~80%
+
+• ROC-AUC: ~0.83
+
+• Improved recall for churn prediction after threshold tuning
 
 Conclusion
 
-The analysis highlights tenure, contract type, internet service, and pricing as important factors associated with customer churn. These insights can support business decisions related to pricing strategies, contract design, and early-stage customer engagement initiatives.
+This project demonstrates how both data analysis and machine learning can be used to understand and predict customer churn. The results highlight key risk factors and provide a foundation for targeted retention strategies. The predictive model can support proactive decision-making by identifying customers who are most likely to leave.
 
