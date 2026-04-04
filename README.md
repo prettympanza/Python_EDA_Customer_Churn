@@ -1,10 +1,10 @@
-Telecom Customer Churn – Analysis and Predictive Modelling
+# Telecom Customer Churn – Analysis and Predictive Modelling
 
-Project Overview
+## Project Overview
 
 This project presents both exploratory data analysis (EDA) and machine learning modelling on a telecom customer dataset to understand and predict customer churn. The analysis identifies key factors influencing churn, while the predictive model helps detect customers at risk of leaving.
 
-Objective
+## Objective
 
 The objective of this project is to:
 
@@ -18,7 +18,7 @@ The objective of this project is to:
 
 • Provide actionable insights to support customer retention strategies
 
-Dataset
+## Dataset
 
 • Number of observations: 7,043 customers
 
@@ -32,37 +32,37 @@ Key feature groups include:
 
 • Contracts and billing: contract type, payment method, tenure, monthly and total charges
 
-Tools and Libraries
+## Tools and Libraries
 
 Python · pandas · numpy · matplotlib · seaborn · scikit-learn
 
-Analysis Workflow
+## Analysis Workflow
 
 Data Loading and Inspection
 
 The dataset was loaded and examined to understand its structure, variables, and data types.
 
-Data Quality Checks
+## Data Quality Checks
 
 No duplicate records or missing values were found. The dataset was clean and suitable for analysis.
 
-Exploratory Data Analysis
+## Exploratory Data Analysis
 
 Univariate and bivariate analysis were conducted to understand distributions and relationships between variables. Visualisations were used to identify churn patterns.
 
-Feature Engineering and Preprocessing
+## Feature Engineering and Preprocessing
 
 Categorical variables were encoded, and numerical features were prepared for modelling.
 
-Model Development
+## Model Development
 
 A Random Forest classifier was used to predict customer churn. The dataset was split into training and testing sets using stratified sampling.
 
-Model Evaluation
+## Model Evaluation
 
 The model was evaluated using accuracy, precision, recall, F1-score, and ROC-AUC. Threshold tuning was applied to improve churn detection.
 
-Key Insights
+## Key Insights
 
 • Customers with shorter tenure are more likely to churn
 
@@ -74,7 +74,7 @@ Key Insights
 
 • Customer engagement and service features influence retention
 
-Model Performance
+## Model Performance
 
 • Accuracy: ~80%
 
@@ -82,7 +82,7 @@ Model Performance
 
 • Improved recall for churn prediction after threshold tuning
 
-Conclusion
+## Conclusion
 
 This project demonstrates how both data analysis and machine learning can be used to understand and predict customer churn. The results highlight key risk factors and provide a foundation for targeted retention strategies. The predictive model can support proactive decision-making by identifying customers who are most likely to leave.
 
